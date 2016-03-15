@@ -36,21 +36,32 @@ systems does at hiding metadata.
 Again this is just a very quick list of things I could think of that make up
 metadata.
 
+**Note:** `-` is used in the table below to indicate where a metadata leak
+doesn't matter.
+
 | Data                            | Observer |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
 | :------------------------------ | :------- | :------------: | :------------: | :----: | :------------: |
 | Usage                           | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](cross.png) |
 | Usage                           | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
 | Usage                           | Contact  | -              | -              | -      | -              |
-| Contact List                    | Edge     | ?              | ![](tick.png)  | ?      | ?              |
-| Contact List                    | Public   | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| Contact List                    | Contact  | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| Contacts                        | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ?              |
+| Contacts                        | Public   | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| Contacts                        | Contact  | ?              | ![](tick.png)  | ?      | ![](cross.png) |
 | IP Address                      | Edge     | -              | -              | -      | -              |
 | IP Address                      | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
 | IP Address                      | Contact  | ![](cross.png) | ![](tick.png)  | ?      | ?              |
 | Currently Communicating Parties | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ?              |
 | Recipients of Outgoing Traffic  | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](tick.png)  |
 
-**Definitions**:
+**Data Definitions:**
+
+* **Usage:** The observer can see when you are using the given system, or even
+  just the fact that you *do* use it, or have used it in the past.
+* **Contacts:** The observer can see one or more associations (either IP
+  Address or Identifier on System) between you and someone else.
+* **IP Address:** Self Explanatory.
+
+**Observer Definitions:**
 
 * **Edge:** Nearby network infrastructure, so your local network, ISP, NSA and any
   network you may connect to as a guest or otherwise all count as entities that
@@ -59,7 +70,7 @@ metadata.
   **Has Information:**
   * IP Address
   * Physical Location
-  * Potentially Real Identity
+  * Real Identity
 
 * **Public:** Any person on the internet / whether using the system or not.
 
