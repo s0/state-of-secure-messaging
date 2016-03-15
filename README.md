@@ -2,7 +2,10 @@
 
 This document is intended to be a high-level summary of the various features /
 characteristics of current open source secure messaging systems. This document
-only covers completely open source systems.
+only covers completely open source end-to-end encrypted systems.
+
+In essence, for all of these systems, all content of messages is encrypted on
+the sender and receiver's devices.
 
 ## Under Development
 
