@@ -36,14 +36,36 @@ systems does at hiding metadata.
 Again this is just a very quick list of things I could think of that make up
 metadata.
 
-| Data                            |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
-| :------------------------------ | :------------: | :------------: | :----: | :------------: |
-| Usage (by Edge Infrastructure)  | ![](cross.png) | ![](tick.png)  | ?      | ![](cross.png) |
-| Contact List (by Public)        | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| Contact List (by Contacts)      | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| Currently Communicating Parties | ![](cross.png) | ![](tick.png)  | ?      | ?              |
-| Recipients of Outgoing Messages | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
-| IP Address (by Public)          | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
-| IP Address (by Contacts)        | ![](cross.png) | ![](tick.png)  | ?      | ?              |
+| Data                            | Observer |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
+| :------------------------------ | :------- | :------------: | :------------: | :----: | :------------: |
+| Usage                           | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](cross.png) |
+| Usage                           | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
+| Contact List                    | Public   | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| Contact List                    | Edge     | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| Contact List                    | Contact  | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| Currently Communicating Parties | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ?              |
+| Recipients of Outgoing Traffic  | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](tick.png)  |
+| IP Address                      | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
+| IP Address                      | Contact  | ![](cross.png) | ![](tick.png)  | ?      | ?              |
+
+**Definitions**:
+
+* Edge: Nearby network infrastructure, so your local network, ISP, NSA all count
+  as entities that can observe edge traffic, in essence anyone between you and
+  the "system".
+
+  **Has Information:**
+  * IP Address
+  * Physical Location
+  * Potentially Real Identity
+* Public: Any person on the internet / whether using the system or not.
+
+  **Has Information:**
+  * Identifier on system (e.g. username / pubkey)
+
+* Contact: Someone on your contact's list.
+
+  **Has Information:**
+  * Identifier on system (e.g. username / pubkey)
 
 
