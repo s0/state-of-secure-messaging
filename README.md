@@ -15,7 +15,7 @@ left to be done.
 | Feature                 |      Signal       |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
 | :---------------------- | :---------------: | :------------: | :------------: | :----: | :------------: |
 | Architecture            | Central           | P2P            | P2P            | ?      | P2P            |
-| Hidden Metadata         | ![](cross.png)    | ?              | ![](tick.png)  | ?      | Some           |
+| Hidden Metadata         | ![](cross.png)    | Some           | ![](tick.png)  | ?      | Some           |
 | Censorship Resistance   | ![](cross.png)    | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
 | Contact Discovery       | ![](tick.png)     | ?              | ![](cross.png) | ?      | ?              |
 | Offline Messaging       | ![](tick.png)     | ![](cross.png) | ![](cross.png) | ?      | ![](tick.png)  |
@@ -24,5 +24,5 @@ left to be done.
 | Calling                 | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
 | Video Chat              | ![](cross.png)    | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
 | Deniability             | ![](tick.png)     | ?              | ?              | ?      | ?              |
-| Forward Secrecy         | ![](tick.png)     | ?              | ?              | ?      | ?              |
+| Forward Secrecy         | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              |
 | Future Secrecy          | ![](tick.png)     | ?              | ?              | ?      | ?              |
