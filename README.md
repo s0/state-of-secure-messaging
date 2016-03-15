@@ -9,16 +9,16 @@ only covers completely open source systems.
 This is a very rough draft of this information and there is still lots of work
 left to be done.
 
-| Feature                 | Signal |  Tox  | Ricochet |  Pond  | Twister DMs |
-| :---------------------- | :----: | :---: | :------: | :----: | :---------: |
-| Hidden Metadata         | N      | ?     | Y        | ?      | Some        |
-| Censorship Resistance   | N      | ?     | Y        | ?      | Y           |
-| Contact Discovery       | Y      | ?     | N        | ?      | ?           |
-| Offline Messaging       | Y      | N     | N        | ?      | Y           |
-| Group Messaging         | Y      | Y     | N        | ?      | N           |
-| Multi-Device Support    | Y (3)  | N     | N        | ?      | N           |
-| Calling                 | Y      | Y     | N        | ?      | N           |
-| Video Chat              | N      | Y     | N        | ?      | N           |
-| Deniability             | Y      | ?     | ?        | ?      | ?           |
-| Forward Secrecy         | Y      | ?     | ?        | ?      | ?           |
-| Future Secrecy          | Y      | ?     | ?        | ?      | ?           |
+| Feature                 |      Signal       |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
+| :---------------------- | :---------------: | :------------: | :------------: | :----: | :------------: |
+| Hidden Metadata         | ![](cross.png)    | ?              | ![](tick.png)  | ?      | Some           |
+| Censorship Resistance   | ![](cross.png)    | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
+| Contact Discovery       | ![](tick.png)     | ?              | ![](cross.png) | ?      | ?              |
+| Offline Messaging       | ![](tick.png)     | ![](cross.png) | ![](cross.png) | ?      | ![](tick.png)  |
+| Group Messaging         | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
+| Multi-Device Support    | ![](tick.png) (3) | ![](cross.png) | ![](cross.png) | ?      | ![](cross.png) |
+| Calling                 | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
+| Video Chat              | ![](cross.png)    | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
+| Deniability             | ![](tick.png)     | ?              | ?              | ?      | ?              |
+| Forward Secrecy         | ![](tick.png)     | ?              | ?              | ?      | ?              |
+| Future Secrecy          | ![](tick.png)     | ?              | ?              | ?      | ?              |
