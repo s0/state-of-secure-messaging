@@ -17,27 +17,26 @@ left to be done.
 | Architecture            | Central           | P2P            | P2P            | ?      | P2P            |
 | Hidden Metadata         | ![](cross.png)    | Some           | ![](tick.png)  | ?      | Some           |
 | Censorship Resistant    | ![](cross.png)    | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contact Discovery       | ![](tick.png)     | ?              | ![](cross.png) | ?      | ?              |
+| Contact Discovery       | Mobile Number     | ?              | ![](cross.png) | ?      | ?              |
 | Offline Messaging       | ![](tick.png)     | ![](cross.png) | ![](cross.png) | ?      | ![](tick.png)  |
 | Group Messaging         | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
-| Multi-Device Support    | ![](tick.png) (3) | ![](cross.png) | ![](cross.png) | ?      | ![](cross.png) |
+| Multi-Device Support    | ![](tick.png) (3) | In Development | ![](cross.png) | ?      | ![](cross.png) |
 | Calling                 | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
 | Video Chat              | ![](cross.png)    | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
-| Deniability             | ![](tick.png)     | ?              | ?              | ?      | ?              |
+| Deniability             | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              |
 | Forward Secrecy         | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              |
 | Future Secrecy          | ![](tick.png)     | ?              | ?              | ?      | ?              |
 
-## Metadata Leaking
+## Metadata Leakage
 
-When it comes to metadata, there are many different pieces of data that can be
-considered metadata. This table attempts to summarize how well each of these
-systems does at hiding metadata.
+Again this is just a very quick list of things I could think of that could be
+considered metadata. Suggestions welcome.
 
-Again this is just a very quick list of things I could think of that make up
-metadata.
-
-**Note:** `-` is used in the table below to indicate where a metadata leak
-doesn't matter.
+**Key:**
+ * `-` leak does not matter / makes no sense.
+ * ![](cross.png) the data is leaked.
+ * ![](tick.png) the data is not leaked.
+ * `?` needs clarification
 
 | Data                            | Observer |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
 | :------------------------------ | :------- | :------------: | :------------: | :----: | :------------: |
