@@ -29,6 +29,9 @@ left to be done.
 
 ## Metadata Leakage
 
+Information (that is not part of the content of a message) that may be
+undesirable for others to know about.
+
 Again this is just a very quick list of things I could think of that could be
 considered metadata. Suggestions welcome.
 
@@ -36,7 +39,7 @@ considered metadata. Suggestions welcome.
  * `-` leak does not matter / makes no sense.
  * ![](cross.png) the data is leaked.
  * ![](tick.png) the data is not leaked.
- * `?` needs clarification
+ * `?` needs clarification / investigation.
 
 | Data                            | Observer |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
 | :------------------------------ | :------- | :------------: | :------------: | :----: | :------------: |
@@ -58,7 +61,15 @@ considered metadata. Suggestions welcome.
   just the fact that you *do* use it, or have used it in the past.
 * **Contacts:** The observer can see one or more associations (either IP
   Address or Identifier on System) between you and someone else.
-* **IP Address:** Self Explanatory.
+
+  If for example an edge observer could observe a connection between you and
+  another user of the same system (e.g. a direct TCP connection between 2 IP
+  Addresses) then this counts as a leak of this kind. Over time an adversary
+  could build up a map of all of your "contacts" presuming you message each of
+  your contacts at least once since observation begins.
+* **IP Address:** Self Explanatory. Can be tied to a geographic location and
+  your identity in many situations.
+
 
 **Observer Definitions:**
 
