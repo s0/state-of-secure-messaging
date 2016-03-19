@@ -41,32 +41,39 @@ considered metadata. Suggestions welcome.
  * ![](tick.png) the data is not leaked.
  * `?` needs clarification / investigation.
 
-| Data                            | Observer |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
-| :------------------------------ | :------- | :------------: | :------------: | :----: | :------------: |
-| Usage                           | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](cross.png) |
-| Usage                           | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
-| Usage                           | Contact  | -              | -              | -      | -              |
-| Contacts                        | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ?              |
-| Contacts                        | Public   | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| Contacts                        | Contact  | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| IP Address                      | Edge     | -              | -              | -      | -              |
-| IP Address                      | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
-| IP Address                      | Contact  | ![](cross.png) | ![](tick.png)  | ?      | ?              |
-| Currently Communicating Parties | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ?              |
-| Recipients of Outgoing Traffic  | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](tick.png)  |
+| Data                                  | Observer |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
+| :------------------------------------ | :------- | :------------: | :------------: | :----: | :------------: |
+| Usage                                 | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](cross.png) |
+| Usage                                 | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
+| Usage                                 | Contact  | -              | -              | -      | -              |
+| Contacts Currently Communicating With | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ![](tick.png)  |
+| Contacts Currently Communicating With | Public   | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
+| Contacts Currently Communicating With | Contact  | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
+| Contacts                              | Edge     | ![](cross.png) | ![](tick.png)  | ?      | ?              |
+| Contacts                              | Public   | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| Contacts                              | Contact  | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| IP Address                            | Edge     | -              | -              | -      | -              |
+| IP Address                            | Public   | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
+| IP Address                            | Contact  | ![](cross.png) | ![](tick.png)  | ?      | ?              |
 
 **Data Definitions:**
 
 * **Usage:** The observer can see when you are using the given system, or even
   just the fact that you *do* use it, or have used it in the past.
+* **Contacts Currently Communicating With:** The oberver can see when you are
+  communicating with a particular contact (either IP Address or Identifier on
+  System). A leak of this kind directly leads to a leak of **Contacts** as
+  detailed below.
 * **Contacts:** The observer can see one or more associations (either IP
   Address or Identifier on System) between you and someone else.
 
   If for example an edge observer could observe a connection between you and
-  another user of the same system (e.g. a direct TCP connection between 2 IP
-  Addresses) then this counts as a leak of this kind. Over time an adversary
-  could build up a map of all of your "contacts" presuming you message each of
-  your contacts at least once since observation begins.
+  another user of the same system (as above) (e.g. a direct TCP connection
+  between 2 IP Addresses) then this counts as a leak of this kind. Over time an
+  adversary could build up a map of all of your "contacts" presuming you message
+  each of your contacts at least once since observation begins.
+* **IP Address:** Self Explanatory. Can be tied to a geographic location and
+  your identity in many situations.
 * **IP Address:** Self Explanatory. Can be tied to a geographic location and
   your identity in many situations.
 
@@ -91,5 +98,3 @@ considered metadata. Suggestions welcome.
 
   **Has Information:**
   * Identifier on system (e.g. username / pubkey)
-
-
