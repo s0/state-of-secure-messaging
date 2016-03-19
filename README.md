@@ -2,15 +2,19 @@
 
 This document is intended to be a high-level summary of the various features /
 characteristics of current open source secure messaging systems. This document
-only covers completely open source end-to-end encrypted systems.
+only covers **completely open source end-to-end encrypted systems** (by systems,
+I mean the underlying network architecture and protocol, not specific client
+implementations).
 
 In essence, for all of these systems, all content of messages is encrypted on
 the sender and receiver's devices.
 
-## Under Development
+### Note
 
-This is a very rough draft of this information and there is still lots of work
-left to be done.
+This document is a very rough draft, and there is still lots of work left to be
+done.
+
+## Features
 
 | Feature                 |      Signal       |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
 | :---------------------- | :---------------: | :------------: | :------------: | :----: | :------------: |
