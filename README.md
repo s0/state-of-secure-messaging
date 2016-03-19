@@ -41,24 +41,24 @@ considered metadata. Suggestions welcome.
  * ![](tick.png) the data is not leaked.
  * `?` needs clarification / investigation.
 
-| Data                                  | Observer |     Signal     |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
-| :------------------------------------ | :------- | :------------: |:-------------: | :------------: | :----: | :------------: |
-| Usage                                 | Edge     | ![](cross.png) | ![](cross.png) | ![](tick.png)  | ?      | ![](cross.png) |
-| Usage                                 | Server   | ![](cross.png) | -              | -              | ?      | -              |
-| Usage                                 | Public   | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
-| Usage                                 | Contact  | -              | -              | -              | -      | -              |
-| Contacts Currently Communicating With | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contacts Currently Communicating With | Server   | ![](cross.png) | -              | -              | ?      | -              |
-| Contacts Currently Communicating With | Public   | ![](tick.png)  | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contacts Currently Communicating With | Contact  | ![](tick.png)  | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contacts                              | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ?      | ?              |
-| Contacts                              | Server   | ![](cross.png) | -              | -              | ?      | -              |
-| Contacts                              | Public   | ![](tick.png)  | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| Contacts                              | Contact  | ![](tick.png)  | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| IP Address                            | Edge     | -              | -              | -              | -      | -              |
-| IP Address                            | Server   | ![](cross.png) | -              | -              | ?      | -              |
-| IP Address                            | Public   | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
-| IP Address                            | Contact  | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ?      | ?              |
+| Data                                  | Observer |     Signal     |      Tox       |  Tox over Tor  |    Ricochet    |  Pond  |  Twister DMs   |
+| :------------------------------------ | :------- | :------------: |:-------------: | :------------: | :------------: | :----: | :------------: |
+| Usage                                 | Edge     | ![](cross.png) | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
+| Usage                                 | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
+| Usage                                 | Public   | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
+| Usage                                 | Contact  | -              | -              | -              | -              | -      | -              |
+| Contacts Currently Communicating With | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ![](tick.png)  |
+| Contacts Currently Communicating With | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
+| Contacts Currently Communicating With | Public   | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
+| Contacts Currently Communicating With | Contact  | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
+| Contacts                              | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
+| Contacts                              | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
+| Contacts                              | Public   | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| Contacts                              | Contact  | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](cross.png) |
+| IP Address                            | Edge     | -              | -              | -              | -              | -      | -              |
+| IP Address                            | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
+| IP Address                            | Public   | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
+| IP Address                            | Contact  | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
 
 **Data Definitions:**
 
@@ -67,7 +67,8 @@ considered metadata. Suggestions welcome.
 * **Contacts Currently Communicating With:** The oberver can see when you are
   communicating with a particular contact (either IP Address or Identifier on
   System). A leak of this kind directly leads to a leak of **Contacts** as
-  detailed below.
+  detailed below. Seeing a single message while knowing the sender and recipient
+  counts as a leak of this kind.
 
   From the point of view of the Contact observer, we exclude communications only
   with this contact. IE: we consider there to be a leak only when one contact
