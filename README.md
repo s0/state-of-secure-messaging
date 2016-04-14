@@ -20,11 +20,11 @@ done.
 | :---------------------- | :---------------: | :------------: | :------------: | :----: | :------------: | :------------: |
 | Architecture            | Central           | P2P            | P2P            | ?      | P2P            | F2F            |
 | Hidden Metadata         | ![](cross.png)    | Some           | ![](tick.png)  | ?      | Some           | Some           |
-| Censorship Resistant    | ![](cross.png)    | ?              | ![](tick.png)  | ?      | ![](tick.png)  | ?              |
+| Censorship Resistant    | ![](cross.png)    | ?              | ![](tick.png)  | ?      | ![](tick.png)  | ![](tick.png)  |
 | Contact Discovery       | Mobile Number     | ?              | ![](cross.png) | ?      | ?              | ?              |
 | Offline Messaging       | ![](tick.png)     | ![](cross.png) | ![](cross.png) | ?      | ![](tick.png)  | ![](tick.png)  |
 | Group Messaging         | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) | ![](tick.png)  |
-| Multi-Device Support    | ![](tick.png) (3) | In Development | ![](cross.png) | ?      | ![](cross.png) | ?              |
+| Multi-Device Support    | ![](tick.png) (3) | In Development | ![](cross.png) | ?      | ![](cross.png) | ![](cross.png) |
 | Calling                 | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) | ![](tick.png)  |
 | Video Chat              | ![](cross.png)    | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) | ![](tick.png)  |
 | Deniability             | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              | ?              |
@@ -45,24 +45,24 @@ considered metadata. Suggestions welcome.
  * ![](tick.png) the data is not leaked.
  * `?` needs clarification / investigation.
 
-| Data                                  | Observer |     Signal     |      Tox       |  Tox over Tor  |    Ricochet    |  Pond  |  Twister DMs   |
-| :------------------------------------ | :------- | :------------: |:-------------: | :------------: | :------------: | :----: | :------------: |
-| Usage                                 | Edge     | ![](cross.png) | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
-| Usage                                 | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
-| Usage                                 | Public   | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) |
-| Usage                                 | Contact  | -              | -              | -              | -              | -      | -              |
-| Contacts Currently Communicating With | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contacts Currently Communicating With | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
-| Contacts Currently Communicating With | Public   | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contacts Currently Communicating With | Contact  | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contacts                              | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
-| Contacts                              | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
-| Contacts                              | Public   | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| Contacts                              | Contact  | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](cross.png) |
-| IP Address                            | Edge     | -              | -              | -              | -              | -      | -              |
-| IP Address                            | Server   | ![](cross.png) | -              | -              | -              | ?      | -              |
-| IP Address                            | Public   | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
-| IP Address                            | Contact  | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ?              |
+| Data                                  | Observer |     Signal     |      Tox       |  Tox over Tor  |    Ricochet    |  Pond  |  Twister DMs   | RS over Tor |
+| :------------------------------------ | :------- | :------------: |:-------------: | :------------: | :------------: | :----: | :------------: | :-----------: |
+| Usage                                 | Edge     | ![](cross.png) | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) | ![](tick.png) |
+| Usage                                 | Server   | ![](cross.png) | -              | -              | -              | ?      | -              | -             |
+| Usage                                 | Public   | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ?      | ![](cross.png) | ![](tick.png) |
+| Usage                                 | Contact  | -              | -              | -              | -              | -      | -              | -             |
+| Contacts Currently Communicating With | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ![](tick.png)  | ![](tick.png) |
+| Contacts Currently Communicating With | Server   | ![](cross.png) | -              | -              | -              | ?      | -              | -             | 
+| Contacts Currently Communicating With | Public   | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](tick.png)  | ![](tick.png) |
+| Contacts Currently Communicating With | Contact  | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](tick.png)  | ![](tick.png) |
+| Contacts                              | Edge     | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ?              | ![](tick.png) |
+| Contacts                              | Server   | ![](cross.png) | -              | -              | -              | ?      | -              | -             |
+| Contacts                              | Public   | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](cross.png) | ![](tick.png) |
+| Contacts                              | Contact  | ![](tick.png)  | ?              | ?              | ![](tick.png)  | ?      | ![](cross.png) | ![](tick.png) |
+| IP Address                            | Edge     | -              | -              | -              | -              | -      | -              | -             |
+| IP Address                            | Server   | ![](cross.png) | -              | -              | -              | ?      | -              | -             |
+| IP Address                            | Public   | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ![](tick.png)  | ?      | ?              | ![](tick.png) |
+| IP Address                            | Contact  | ![](tick.png)  | ![](cross.png) | ![](tick.png)  | ![](tick.png)  | ?      | ?              | ![](tick.png) |
 
 **Data Definitions:**
 
