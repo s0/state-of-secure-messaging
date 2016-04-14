@@ -16,20 +16,20 @@ done.
 
 ## Features
 
-| Feature                 |      Signal       |      Tox       |    Ricochet    |  Pond  |  Twister DMs   |
-| :---------------------- | :---------------: | :------------: | :------------: | :----: | :------------: |
-| Architecture            | Central           | P2P            | P2P            | ?      | P2P            |
-| Hidden Metadata         | ![](cross.png)    | Some           | ![](tick.png)  | ?      | Some           |
-| Censorship Resistant    | ![](cross.png)    | ?              | ![](tick.png)  | ?      | ![](tick.png)  |
-| Contact Discovery       | Mobile Number     | ?              | ![](cross.png) | ?      | ?              |
-| Offline Messaging       | ![](tick.png)     | ![](cross.png) | ![](cross.png) | ?      | ![](tick.png)  |
-| Group Messaging         | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
-| Multi-Device Support    | ![](tick.png) (3) | In Development | ![](cross.png) | ?      | ![](cross.png) |
-| Calling                 | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
-| Video Chat              | ![](cross.png)    | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) |
-| Deniability             | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              |
-| Forward Secrecy         | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              |
-| Future Secrecy          | ![](tick.png)     | ?              | ?              | ?      | ?              |
+| Feature                 |      Signal       |      Tox       |    Ricochet    |  Pond  |  Twister DMs   | RetroShare     |
+| :---------------------- | :---------------: | :------------: | :------------: | :----: | :------------: | :------------: |
+| Architecture            | Central           | P2P            | P2P            | ?      | P2P            | F2F            |
+| Hidden Metadata         | ![](cross.png)    | Some           | ![](tick.png)  | ?      | Some           | Some           |
+| Censorship Resistant    | ![](cross.png)    | ?              | ![](tick.png)  | ?      | ![](tick.png)  | ?              |
+| Contact Discovery       | Mobile Number     | ?              | ![](cross.png) | ?      | ?              | ?              |
+| Offline Messaging       | ![](tick.png)     | ![](cross.png) | ![](cross.png) | ?      | ![](tick.png)  | ![](tick.png)  |
+| Group Messaging         | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) | ![](tick.png)  |
+| Multi-Device Support    | ![](tick.png) (3) | In Development | ![](cross.png) | ?      | ![](cross.png) | ?              |
+| Calling                 | ![](tick.png)     | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) | ![](tick.png)  |
+| Video Chat              | ![](cross.png)    | ![](tick.png)  | ![](cross.png) | ?      | ![](cross.png) | ![](tick.png)  |
+| Deniability             | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              | ?              |
+| Forward Secrecy         | ![](tick.png)     | ![](tick.png)  | ?              | ?      | ?              | ![](tick.png)  |
+| Future Secrecy          | ![](tick.png)     | ?              | ?              | ?      | ?              | ?              |
 
 ## Metadata Leakage
 
